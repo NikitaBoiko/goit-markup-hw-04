@@ -14,6 +14,7 @@
   --gray-bgc: #f5f4fa;
   --contacts: rgba(255, 255, 255, 0.6);
 }
+
 /* html style */
 .body {
   color: var(--primary-text);
@@ -34,23 +35,15 @@
   margin-right: auto;
   margin-left: auto;
 }
-.flexbox {
-  display: flex;
-}
-.header .flexbox {
-  align-items: center;
-  
-}
 .logo {
   margin-right: 93px;
   
 }
 /* header */
-.body.header {
+.header {
   background-color: var(--white-bgc);
   position: absolute;
   width: 1600px;
-  height: 80px;
   left: 0px;
   top: 0px;
 
@@ -83,8 +76,6 @@
 /* site-nav */
 ul {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
 }
 .site-nav-list {
   color: var(--title-text);
@@ -94,7 +85,17 @@ ul {
 .site-nav a:focus {
   color: var(--active);
 }
-
+.site-contact {
+  display: flex;
+  justify-content: flex-end;
+}
+.link-contact {
+  display: inline-flex;
+}
+.mail-phone-link{
+  display: flex; 
+  align-items: center;
+}
 .phone {
   color: var(--primary-text);
   display: flex;
@@ -120,7 +121,7 @@ letter-spacing: 0.02em;
     background-image: url(../images/hero.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .order-container {
@@ -387,12 +388,9 @@ top: 32px;
   background-image: url(../css/svg/astronaut.svg);
 }
 .icon {
-  display: flex;
-  align-items: center;
-  vertical-align:center;
   margin-right: 10px;
   fill: #757575;
   width: 16px;
   height: 12px;
-  align-items: center;
+
 }
